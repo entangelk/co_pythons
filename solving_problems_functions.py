@@ -70,7 +70,7 @@ if __name__ == "__main__":
             '1) class, 2) def, 3) import, 4) return'
     ]       # hint
     # 문제 당 정답
-    list_corrects = [2,1,1,2]    # hint    # 정답 ㅊ가
+    list_corrects = [2,1,1,2]    # hint    # 정답 추가
 
 
     run=problems_main(list_problems) # 실행 인스턴스 추가?
