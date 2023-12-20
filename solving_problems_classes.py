@@ -36,7 +36,7 @@ class Statistics:
     def total_responses(self, input_temp):    # 점수 합계 출력
         input_temp = [int(i) for i in input_temp]
         # 문제 당 점수
-        score_temp = [10, 15, 10, 5]        # hint
+        score_temp = [10, 15, 10, 5]        # hint #????????? 틀린부분 없음 전역변수로 사용될 일도 없음
         
 
         # 점수 합계
