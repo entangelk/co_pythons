@@ -1,5 +1,5 @@
 # 문제 출력/사용자 입력 받는 function
-def problems_main(questions) :      # hint
+def problems_main(questions) :      # hint # 이름 오타 수정
     
     #list_problems 에서 질문에만 번호 부여하기 위해 인덱스 홀수 짝수로 나눔
     problems_first = questions[1], questions[3], questions[5], questions[7]
@@ -9,7 +9,7 @@ def problems_main(questions) :      # hint
     list_results = []
 
     #각 그룹에서 질문 가져옴
-    for question in [0,1,2,3]:       # hint
+    for question in [0,1,2,3]:       # hint # 리스트 번호에 맞게 넣음
         question_a = problems_second[question]
         question_b = problems_first[question]
         
@@ -28,7 +28,7 @@ def problems_main(questions) :      # hint
         input_temp = [int(i) for i in list_results]
         
     # 점수 합계/학점 출력 function
-    def total_responses(input_temp):
+    def total_responses(input_temp): #??? 입력될 데이터 제대로 추가
 
         # 문제 당 점수
         score_temp = [10, 15, 10, 5]
@@ -43,7 +43,7 @@ def problems_main(questions) :      # hint
         # A : 30 이상, B : 20 점 이상,  F : 20점 미만 
         if score >= 30:
             score_result = "A"
-        elif score >= 20:       # hint
+        elif score >= 20:       # hint #오타 수정
             score_result = "B"
         else:
             score_result = "F"
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # 출제 문제
     list_problems = [
             'Python에서 변수를 선언하는 방법은? (점수: 10점)',
-            '1) var name 2) name = value 3) set name 4) name == value',
+            '1) var name 2) name = value 3) set name 4) name == value', # 누락된 리스트 추가
             'Python에서 리스트(List)의 특징은 무엇인가요? (점수: 15점)',
             '1) 순서가 있고 변경 가능하다, 2) 중복된 값을 가질 수 없다, 3) 원소를 추가하거나 삭제할 수 없다, 4) 정렬된 상태로 유지된다', 
             'Python에서 조건문을 작성하는 방법은? (점수: 10점)', 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
             '1) class, 2) def, 3) import, 4) return'
     ]       # hint
     # 문제 당 정답
-    list_corrects = [2,1,1,2]    # hint
+    list_corrects = [2,1,1,2]    # hint    # 정답 ㅊ가
 
 
     run=problems_main(list_problems)
