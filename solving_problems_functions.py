@@ -73,5 +73,5 @@ if __name__ == "__main__":
     list_corrects = [2,1,1,2]    # hint    # 정답 ㅊ가
 
 
-    run=problems_main(list_problems)
+    run=problems_main(list_problems) # 실행 인스턴스 추가?
 
